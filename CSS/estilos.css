@@ -384,7 +384,7 @@ hr{
 
 /*-------------Contacto-----------*/
 .grillaContacto{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato',sans-serif;
     display: grid;
     grid-template-areas:
     "cabezera "
