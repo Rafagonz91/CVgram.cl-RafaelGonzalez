@@ -4,97 +4,171 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="stylesheet" href="../CSS/estilos2.css">
     <script src="https://kit.fontawesome.com/ef07964169.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Profile</title>
 </head>
 <body>
-    <div class="grillaGeneral">
-        <header class="cabezera">
-            
-            <img src="../Img/Logo2.png" alt="Logo" class="cabezeraLogo animate__animated animate__backInLeft animate__fast">
-            
-            
-            <nav class="cabezeraNav">
-                <ul>
-                    <li class="tab2"> <a href="../Index.html"><i class="fa-solid fa-house"></i><span>Inicio</span></a></li>
-                    <li class="tab2"> <a href="#"> <i class="fa-solid fa-id-card-clip"></i>  <span>Perfil</span> </a> </li>
-                    <li class="tab2"><a href="./Blog.html"><i class="fa-solid fa-blog"></i><span>Blog</span></a> </li>                    
-                    <li class="tab2"><a href="./contact.html    "><i class="fa-solid fa-address-card"></i><span>Contacto</span></a></li>
-                    <li class="tab2"> <a href="./pyme.html"><i class="fa-solid fa-building"></i> <span>MiPyme</span></a></li>
-                    <li class="tab2"><a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa-brands fa-linkedin"></i><span>Linkedin</span></a></li>
-                </ul>
-            </nav>          
-            
-        </header>
-        <section class="lateralZ border">
-            <div class="tarjeta">
-                <img src="../Img/Avatar.png" alt="" class="tarjetaAvatar">
-                <section class="tarjetaDatos">
-                    <h2>Rafael J Gonzalez P</h2>
-                    <hr>
-                    <ul>
-                        <li>18 Septiembre 1991</li>
-                        <li>Chile- Santiago Centro</li>
-                        <li>+569 73357876</li>
-                        <li>Venezolano</li>
-                    </ul>
-                </section>                
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <header >
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="../Img/Logo2.png" alt="cvgram" width="60" height="60" class="animate__animated animate__backInLeft">
+                <span class="animate__animated animate__rotateInDownLeft animate__delay-2s">CVgram.cl</span> 
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="mainNav">
+                <div class="nav ms-auto flex-column flex-md-row ">
+                    <a href="../Index.html" class="nav-link"> <i class="fas fa-home"></i> Inicio</a> 
+                    <a href="#" class="nav-link" ><i class="fas fa-male"></i> Perfil</a> 
+                    <a href="./Blog.html" class="nav-link"><i class="fas fa-blog"></i> Blog</a>                      
+                    <a href="./Pages/contact.html" class="nav-link"> <i class="far fa-address-book"></i> Contacto</a>  
+                    <a href="./Pages/pyme.html" class="nav-link"><i class="far fa-building"></i> MiPyme</a>
+                  </div>
+              </div>
             </div>
-            <hr>
-            <div class="grado animate__animated animate__fadeInUp animate__fast">
-                                    
-                <h2>Ingeniero en Sistemad de Calidad y Ambiente</h2>
-                
-            </div>
-            <hr>
-            <div class="trabajo animate__animated animate__fadeInUp animate__fast">
-                <div>
-                    <h2>Asesor de admisiones</h2>
-                    
-                </div>
-                
-            </div>
-        </section>
+        </nav>
         
-        <main class="contenido">
-           
-            <div class="bienvenidos">
-                <h2 class="titulo">Educación</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae porro, labore, distinctio earum dolor magnam optio minima sed aperiam quia sapiente, voluptatibus qui culpa nostrum. Quam quae vero accusamus laudantium.</p>
+    </header>
+    <section class="container">
+        <div class="row  justify-content-center" >
+            <div class=" col-8 col-lg-3 " >
+                <div class="card bg-primary" style="width: 16.5rem;">
+                    <img src="../Img/Avatar.png" class="card-img-top" alt="Avatar" >
+                    <div class="card-body">
+                      <h5 class="card-title">Rafael Gonzalez</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item bg-primary">18 Septiembre 1991</li>
+                      <li class="list-group-item bg-primary">Chile- Santiago Centro</li>
+                      <li class="list-group-item bg-primary">+569 73357876</li>
+                      <li class="list-group-item bg-primary">Venezolano</li>
+                    </ul>                
+                </div> 
+                <hr class="bg-primary">
+                <div class=" card text-dark bg-info mb-3 " style="max-width: 18rem;">
+                    <div class="card-header">TITULACIÓN</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Ing. Sistemas de Calidad</h5>
+                    </div>
+                </div>
+                <hr class=" bg-primary">
+                <div class=" card text-dark bg-warning mb-3" style="max-width: 18rem;">
+                    <div class="card-header">TRABAJO</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Asesor de Admisiciones</h5>
+                    </div>
+                  </div>       
             </div>
-            <hr>
-            <div class="novedades">
-                <h2 class="titulo">Experiencia</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eius odit quibusdam ex .</p>
-            </div>
-            <hr>
-            <div class="Logros">
-                <h2 class="titulo">Habilidades</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eius odit quibusdam ex .</p>
-            </div>
-        </main>
-        <section class="lateralD ">
-            <h2>Mis años de Experiencia</h2>
-            <img src="../Img/Escudo.png" alt="" class="lateralEscudo animate__animated animate__flip animate__repeat-3">
-           
-        </section>
+            <main class="col-9">
+                
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Educación
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <h5 ><strong> Univerdidad Politécnica Andrés Eloy Blanco</strong></h5  >
+                            <p> 2010 al 2015</p>
+                            <p>Titulo Ortogado:<strong> Ingeniría en Sistemad de calidad Y Ambiente</strong></p>
+                            <h5 ><strong> Liceo Fe y Alegría "Cardenal Marcelo Espínola</strong></h5>
+                            <p>2006 al 2009</p>
+                            <p> Titulo ortorgado: <strong> TNM industrial Mención Electricidad</strong></p>
+                            <h5 ><strong> Liceo Fe y Alegría "Cardenal Marcelo Espínola</strong></h5>
+                            <p>2003 al 2006 </p>
+                            <P>Titulo otorgado: <strong>Bachiller</strong> </p>  
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Experiencia Laboral
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <h5 > <strong> Instituto profesional IPP</strong></h5>
+                            <P>Julio 2021- Actualidad Cargo: Asesor de Admisión</p>
+                            <h5 > <strong> Consul Chile</strong></h2>
+                            <P>Agosto 2017- Abril 2018 Cargo: Consultor-Formador Autónomo </p>
+                            <h5 > <strong> MEGAARCHIVOS</strong></h2>
+                            <p>Octubre 2016- Agosto 2017 Cargo: Ejecutivo Servicio Atención al Cliente </p>
+                            <h5 > <strong> LIVINGJUICE ALIMENTOS & BEBIDAS</strong></h2>
+                            <p>Junio 2016- Septiembre 2016 Cargo: Operario de Producción </p>
+                            <h5 > <strong> FERROMECANICA FZ</strong></h2>
+                            <p>Noviembre 2013- Julio 2016 Cargo: Asesor/consultor de Calidad y Seguridad </p>
+                            <h5 > <strong> COMERCIAL ELECTRICA PATTI</strong></h2>
+                            <p>Agosto 2009- Noviembre 2013 Cargo: Asistente de Logística </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Habilidades
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            • Dominio de sistemas operativo informáticos
+                            • Responsabilidad, puntualidad y eficacia en el cumplimiento de labores asignadas.
+                            • Facilidad oratoria y presentación en público.
+                            • Fluidez en conversación e interpretación de idioma inglés.
+                            • Conocimiento teórico- práctico en auditorias de gestión ISO (9001, 14001, 45001) o cualquier otro estándar normativo e internacional.
+                            • Adaptabilidad a distintas modalidades de trabajo.
+                            • Capacidad de auto gestión y distribución de tiempos.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
        
-        <footer class="pieProfile">
-            <div class="pie">
-                <h3>Entregable n°4-</h3>
-                <h3>Derechos Reservados-</h3>
-                <h3>Coded By: Rafael Gonzalez</h3>
-            </div>
-            <div class="rrss">
-                <a href="https://www.instagram.com/rafajgp/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.facebook.com/Rafael.Gonzalez.Pinto" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://wa.me/qr/IOALR6BHURMMG1"target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-            </div>
-        </footer>
-    </div>
+           
+           
+        </div>
+        
+        
+          
+      
+    </section>
+    
    
+   
+    <footer class="text-white bg-dark py-1">
+        <div class="container">
+            <div class="row">
+                <a href="#" class="col-2 d-flex text-decoration-none">
+                    <img src="../Img/Logo2.png" alt="" class="img-logo mr-2" width="30px" height="30px">
+                    <Span class="text-foot">CVgram.cl</Span>
+                </a>                    
+                <ul class="col-8 d-flex justify-content-evenly list-unstyled fs-6">
+                    
+                    <li>Derechos Reservados</li>
+                    <li>Coded by: Rafael Gonzalez</li>
+                </ul> 
+                <div class="col-2 d-flex justify-content-between ">
+                    <a href="https://www.instagram.com/rafajgp/" target="_blank" class="text-foot"><i class="fa-brands fa-instagram "></i>  </a>
+                    <a href="https://www.facebook.com/Rafael.Gonzalez.Pinto" target="_blank" class="text-foot"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://wa.me/qr/IOALR6BHURMMG1"target="_blank" class="text-foot"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/in/rafael-gonzalez-8b445ab8/"target="_blank" class="text-foot"><i class="fa-brands fa-linkedin"></i></a>
+                </div>   
+            </div>
+
+        </div>
+
+    </footer>
+    
+        
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
 </html>
