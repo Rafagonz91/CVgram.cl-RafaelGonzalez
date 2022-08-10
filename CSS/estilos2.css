@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-   background-image: linear-gradient(to left, #00074c, #000e4d, #00134e, #00174e, #021b4e, #021b4e, #021b4e, #021b4e, #00174e, #00134e, #000e4d, #00074c);
+   /*background-image: linear-gradient(to left, #00074c, #000e4d, #00134e, #00174e, #021b4e, #021b4e, #021b4e, #021b4e, #00174e, #00134e, #000e4d, #00074c);*/
    min-height: 100vh;
     
 }   
@@ -20,6 +20,9 @@ body{
 .nav .nav-link i{
     color: orange;
     padding-left: 10px;
+}
+a{
+    color: inherit
 }
 
 /*-----Estilos contenido----*/
@@ -47,4 +50,38 @@ body{
 }
 .card1:hover{
     filter: brightness(110%);
+} 
+.navText{ 
+    background: #000;
+    color: black;
+}
+
+/*-------navbar secundario------*/
+.navBlog img {
+    width: 100%;
+}
+
+.text-bar a{
+    display: flex;
+    padding: 10px;
+    color: gray;
+    text-decoration: none;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 8pt;
+}
+
+.bannerBlog{
+    width: 10%;
+}
+.blogIntro{
+    background-image: url(../Img/Fondo_Blog.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.card-img-filter{
+    filter: brightness(0.8);
+}
+.cvgram{
+    width: 10%;
 }
