@@ -47,12 +47,12 @@ animation: typing 3s steps(30), blink .5s infinite step-end alternate;
 overflow:hidden;
 }
 
-@keyFrames typing {
+@keyframes typing {
 
 from { width: 0}
 }
 
-@keyFrames blink {
+@keyframes blink {
  50% { border-color: transparent}
 }
 
@@ -171,4 +171,5 @@ from { width: 0}
 .rollo:nth-child(4){
     animation-delay: 6s;
     opacity: 0;
-}
+}/*-------Estilos Animaciones Pyme------*/
+
