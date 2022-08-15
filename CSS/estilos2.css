@@ -40,7 +40,7 @@ display: block;
 
 white-space: nowrap;
 border-right: 4px solid orange;
-width: 57%;
+width: 80%;
 font-size: 16pt;
 
 animation: typing 3s steps(30), blink .5s infinite step-end alternate;
@@ -56,6 +56,70 @@ from { width: 0}
  50% { border-color: transparent}
 }
 
+/*Menu animado*/
+.imglink7{
+    position: absolute;
+    top: 100px;
+    left: 760px;
+    width: 150px;
+    z-index: 1;
+}
+
+.imglink2{
+    position: absolute;
+    top: 120px;
+    left: 940px;
+    width: 180px;
+    z-index: 1;
+}
+.imglink1{
+    position: absolute;
+    top: 120px;
+    left: 820px;
+    width: 230px;
+    z-index: 3;
+}
+.imglink3{
+    position: absolute;
+    top: 250px;
+    left: 710px;
+    width: 170px;
+    z-index: 2;
+}
+.imglink4{
+    position: absolute;
+    top: 250px;
+    left:  1010px;
+    width: 180px;
+    z-index: 2;
+}
+.imglink5{
+    position: absolute;
+    top: 360px;
+    left: 830px;
+    width: 100px;
+    z-index: 3;
+}
+
+.imglink6{
+    position: absolute;
+    top: 370px;
+    left: 920px;
+    width: 160px;
+    z-index: 3;
+}
+
+.imglink{
+    transition: transform 0.2s;
+}
+.imglink:hover{
+    transform: scale(1.3);
+}
+
+.greattings{
+    position: relative;
+    top: 110px;
+}
 
 /*-----Estilo animaciones Footer---*/
 
@@ -172,4 +236,6 @@ from { width: 0}
     animation-delay: 6s;
     opacity: 0;
 }/*-------Estilos Animaciones Pyme------*/
+
+
 
