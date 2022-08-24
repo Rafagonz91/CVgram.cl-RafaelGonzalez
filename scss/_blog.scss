@@ -26,43 +26,63 @@
 .rollero{
     display: flex;
     font-size: 24pt;
+    .lista{
+        margin-left: 10px;
+        font-size: 24pt;
+    }
+    .rollo{
+        position: absolute;
+        animation: roll 8s ease 1s infinite backwards;
+    }
+    @keyframes roll{
+        0%{
+            opacity: 0;
+            transform: translate3d(0,-70,0);
+        }
+        2.5%, 25%{
+            opacity: 1;
+            transform: translateZ(0);
+        }
+        27.5%, 100%{
+            opacity: 0;
+            transform: translate3d(0,70%,0);
+        }
+    }
+    .rollo:nth-child(1){
+        animation-delay: 0s;
+        opacity: 0;
+    }
+    .rollo:nth-child(2){
+        animation-delay: 2s;
+        opacity: 0;
+    }
+    .rollo:nth-child(3){
+        animation-delay: 4s;
+        opacity: 0;
+    }
+    .rollo:nth-child(4){
+        animation-delay: 6s;
+        opacity: 0;
+    }
+    
 }
-.lista{
-    margin-left: 10px;
-    font-size: 24pt;
+.fotoPerfil{
+    --box-sizing: 150px;
+    width: var(--box-sizing);
+    height: var(--box-sizing);
+    padding: 10px;
 }
-.rollo{
-    position: absolute;
-    animation: roll 8s ease 1s infinite backwards;
+.fotoModal{
+    @extend .fotoPerfil;
+}
 
-}
-@keyframes roll{
-    0%{
-        opacity: 0;
-        transform: translate3d(0,-70,0);
+.tagBlog{
+    @include tag-style(3em,1em,1em,10px);
+    transition: transform 0.2s;
+    &:hover{
+        border: solid 2pt gray;
     }
-    2.5%, 25%{
-        opacity: 1;
-        transform: translateZ(0);
-    }
-    27.5%, 100%{
-        opacity: 0;
-        transform: translate3d(0,70%,0);
-    }
-}
-.rollo:nth-child(1){
-    animation-delay: 0s;
-    opacity: 0;
-}
-.rollo:nth-child(2){
-    animation-delay: 2s;
-    opacity: 0;
-}
-.rollo:nth-child(3){
-    animation-delay: 4s;
-    opacity: 0;
-}
-.rollo:nth-child(4){
-    animation-delay: 6s;
-    opacity: 0;
+}   
+.botonTag{
+    @include button-style(1pt,50px,blog,1em,main);
 }

@@ -1,20 +1,14 @@
-@import "variables.scss";
-@import "headerFooterCV";
-@import "indexCV";
-@import "blog";
+
+@import "./variables";
+@import "./mixin";
+@import "./cvgram/cvgram";
+@import "./cvgram/mqcv";
+@import "./cvgram/perfil";
+@import "./blog";
+
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/*Contenido*/
-
-/*-----Estilo animaciones Footer---*/
-/*-----Estilos animaciones Profile----*/
-/*-------Estilos Animaciones BLog------*/
-/*-------Estilos Animaciones Pyme------*/
-
-
-
